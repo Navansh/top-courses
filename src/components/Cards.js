@@ -6,7 +6,10 @@ const Cards = ({courses,category}) => {
         doit = JSON.parse(localStorage.getItem("liked-course"));
         console.log(doit.length);
 
+    } else {
+        doit = [];
     }
+
 
     //now currently we have all the data in segregated form, but in the main view we want all the data(not segregated form)
     //hence we first merge all the data and create a new data1
